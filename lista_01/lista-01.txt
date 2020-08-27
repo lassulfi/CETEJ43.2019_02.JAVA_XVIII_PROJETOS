@@ -1,0 +1,60 @@
+Nome: Luis Daniel Assulfi
+
+Disciplina: CETEJ43 - Integração Contínua - JAVA_XVIII (2019_02)
+
+1- Com base no conteúdo apresentado nessa lição da disciplina, apresente uma definição de DevOps e explique quais são os principais benefícios de sua adoção em projetos de desenvolvimento de software contemporâneos.
+Resp.: DevOps é uma cultura de práticas voltada para resultados que apóia o movimento ágil. O princípio central do DevOps é "cultura em primeiro lugar", uma mentalidade de trabalhar em prol de metas compartilhadas, controle de versão, integração contínua, automação, medição e melhoria. A cultura DevOps consiste em diversos cenários, sendo eles a automação do ciclo de desenvolvimento, o gerenciamento de código-fonte e artefatos, o gerenciamento de configurações de maneira consistente, a prontidão do produto para o mercado, a automação de processos manuais que podem ser sujeitos a falhas, a utilização de containers e a superação dos desafios de migração do ambiente local para a nuvem.
+Os benefícios da adoção do DevOps no desenolvimento de software são:
+- Os processos podem ser implementados como autônomos ou uma combinação de outros processos, de modo gradativo e promovendo melhoria continua no produto e processo;
+- As estruturas de automação irão melhorar a eficiência dos negócios;
+- As estruturas DevOps incorporam acordos de nível de serviços para requisitos operacionais;
+- O manual de operações (runbook) é preparado no desenvolvimento para auxiliar operações;
+- Em processos mais amadurecidos, o desenvolvimento baseado em manual de operações é integrado;
+- Nos processos de DevOps o monitoramento específico da aplicação faz parte do processo de desenvolvimento;
+- O planejamento de DevOps considera alta disponibilidade e tecnologia de recuperação de desastres;
+- A resiliência é incorporada ao código do aplicativo em linha com os recursos de tecnologia;
+- A instalação com o script completo do DevOps facilita a implantação totalmente automatizada;
+- A equipe de operação DevOps e os desenvolvedores estão familiarizados com o uso de estruturas de registro;
+- Os requisitos não funcionais de operabilidade, manutenção e monitoramento recebem atenção suficiente, juntamente com as especificações de desenvolvimento do sistema e;
+- A integração e entrega contínuas eliminam erros humanos, reduzem o tempo de inatividade planejado para atualizações e facilitam melhorias de produtividade.
+
+2- Com base no que foi apresentado, quais são os principais desafios da ampla adoção de DevOps nos times de desenvolvimento atuais?
+Resp.: O primeiro desafio está na definição da estratégia DevOps. Uma estratégia completa, no nível mais básico, deve responder as seguintes perguntas:
+- Quais são os objetivos e metas de negócios?
+- Como será planejada a caminhada DevOps? Por onde deve-se iniciar a caminhada?
+- Como devem ser canalizados os esforços?
+- O que tenta-se realizar ao implementar o DevOps?
+- Qual o cronograma para a implementação?
+- Qual o impacto no negócio?
+- Como os stakeholders veem o valor da implementação do DevOps no negócio?
+- Quais são os benefícios e custos?
+Na adesão do DevOps alguns desafios podem ser encontrados:
+- Alto esforço de implantação para cada um dos sistemas de desenvolvimento, controle de qualidade e produção;
+- Existência de procedimentos complexos de instalação manual;
+- Inexistência de manual de operações abrangente, dificultando a operação do sistema;
+- Detalhes insuficientes de rastreamento ou arquivos de log, tornando a solução incompleta;
+- Existência de problemasde desempenho não avaliados;
+- Dificuldade de adesão ao acordo de nível de serviço, conforme exigido pelo app de negócios;
+- Lacunas no monitoramento de servidores, sistemas de arquivos, bancos de dados e aplicativos isolados;
+- Existência de um alto custo para manter aplicações de negócios para tolerância a falhas
+
+3- Explique detalhadamente o conceito de Integração Contínua.
+Resp.: A integração contínua é o processo de desenvolvimento de software integrado no qual vários desenvolvedores aderem à metodologia ágil e a adaptam às melhores práticas, como as seguintes:
+- Garantir que todo o código de desenvolvimento esteja sujeito a um sistema de controle de versão;
+- Incorporação de um processo de revisão de código;
+- Mudanças no código são integradas, testadas e construídas rapidamente;
+- O processo de compilação é integrado para executar testes de unidade e automatizado (build);
+- Atendimento a erros de compilação de maneira imediata;
+- Acompanhamento e métricas de resultados de construção e gerenciamento de repositório;
+- Transparência e um processo de construção amigável.
+
+4- De acordo com o que você entendeu do conteúdo, porque os conceitos de computação em nuvem estão tão associados a DevOps e Integração Contínua?
+Resp.: Os conceitos de computação em nuvem estão associados ao DevOps e Integração Contínua pois trata-se de uma entrega de serviço de computação pela internet. Além do serviço de computação, a computação em nuvem fornece servidores, armazenamento, bancos de dados, redes e softwares de análise e inteligência. Esse conceito também busca oferecer inovação de forma rápida, com recursos flexíveis e economias de escala, além da alta disponibilidade dos serviços, aummento da produtividade devido as facilidades de configuração, atuação, confiabilidade e segurança.
+
+5- O que é virtualização? Quais são os tipos de virtualização? Porque virtualização está associada a DevOps?
+Resp.: A virtualização é o processo de criação de software que imita vários ambientes de hardware e software sem ter que alterar o próprio hardware físico. As técnicas de virtualização criam abstrações de componentes físicos de hardware para criar ambientes agregados de recursos compostos de CPUs, memória, armazenamento, rede de aplicativos, entre outros componentes. Basicamente, uma máquina virtual (ou Virtual Machines - VM's) funciona como uma simulação de configurações específicas de hardware e software de TI, sem exigir que os componentes físicos sejam trocados. A virtualização então permite que uma única peça de hardware "hospede" várias configurações de VM simultaneamente.
+Exitem três principais tipos de virtualização: de servidor, de rede e de desktop. A virtualização de servidor permite que um único servidor físico execute vários sistemas operacionais ao mesmo tempo. Isso cria um servidor mais eficiente, oferecendo custos operacionais reduzidos, maior desempenho e capacidade de carga de trabalho mais rápida, ao mesmo tempo que reduz a complexidade do servidor físico. A virtualização de deskop imita o ambiente e as configurações de uma instância de desktop e os aplicativos hospedados no ambiente físico. Isso permite que os usuários acessem recursos corporativos de fora do local ou ae mesmo de dispositivos que, de outra forma, seriam incapazes de executar os serviços hospedados. Essa tecnologia permite que os usuários aproveitem o poder de processamento de máquinas mais avançadas a partir de dispositivos padrão ou mesmo móveis - fornecendo-lhes os recursos que precisam para realizar seu trabalho em trânsito. A virtualização de rede reproduz redes físicas em um ambiente virtual que permite que os aplicativos sejam executados na rede simulada da mesma forma que fariam em uma rede física. As redes virtuais fornecem benefícios operacionais aprimorados em comparação com as contrapartes físicas e fazem isso com custo reduzido.
+A virtualização está associada a DevOps pois permite que as equipes de DevOps desenvolvam e testem em ambientes simulados que executam toda a gama de dispositivos disponíveis para os consumidores, enquanto testa a implantação em ambientes virtuais ao vivo. Isso permite que o desenvolvimento ocorra juntamente com o teste em tempo real de como as alterações afetarão todo o sistema. Esse nível de precisão nos testes reduz os tempos de implantação e aumenta a estabilidade.  
+
+6- Navegue através dos links das ferramentas de apoio citadas na lição. Destaque as ferramentas com as quais você já teve contato em seus projetos (particulares ou profissionais). Destaque també as ferramentas que você não conhecia. 
+Resp.: Das ferramentas apresentadas eu tive contato com Docker, Kubernetes para realizar o deploy de aplicações backend, sendo que o uso das ferramentas foi através da plaforma Microsoft Azure e pela AWS, também tive contato com o Jenkins para automação de jobs e testes. O Github tive contato para projetos pessoais e para projetos profissionais utilizei o Gitlab e Bitbucket. As ferramentas que não conhecia são o Ansiable, Chef, Puppet e o RedHat Openshift. Para ferramentas de colaboração eu conheço e utilizo para fins profissionais o Jira e Slack.
