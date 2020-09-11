@@ -1,0 +1,27 @@
+Nome: Luis Daniel Assulfi
+
+Disciplina: CETEJ43 - Integração Contínua - JAVA_XVIII (2019_02)
+
+Lista 03 - Projeto e Implantação de nuvens públicas e privadas
+
+1 - De acordo com o conteúdo apresentado, o que é uma nuvem pública?
+Resp.: Uma nuvem pública é toda a estrutura de serviços (softwares, plataformas e infraestruturas) que são disponibilizadas para uso público. As nuvens públicas são mais econômicas que as nuvens privadas. As nuvens públicas costumam apresentar aspectos de desempenho e segurança similares a servidores privados. Os usuários de nuvens públicas desejam total observabilidade e controlabilidade para suas cargas de trabalho. Essa observabilidade e controlabilidade é aplicável aos aplicativos e dados que estão implantados em um servidor remoto. Esses usuários também esperam um servidor seguro como se estivessem em suas próprias instalações através de um firewall qualquer.
+
+2 - De acordo com o conteúdo apresentado, o que é uma nuvem privada?
+Resp.: Como a maioria das empresas possuem servidores e instalações de armazenamento em seus datacenters privados, é comum que, ao utilizar serviços em nuvem, ter a necessidade de manter suas informações protegidas. Para clientes com cargas de trabalho e/ou dados confidenciais ou sensíveis ao desempenho, os provedores de nuvem pública oferecem uma nuvem privada virtual, que pode ser considerada como um serviço hospedado ou um grupo de servidores dedicados para tal cliente. Estes oferecem facilidade dedicada, mas a um custo mais alto, uma vez que o provedor de serviços em nuvem não pode compartilhar essa infraestrutura com outros clientes. Isso é preferível para alguns usuários da nuvem que não desejam manter seus próprios serviços de TI, mas desejam a garantia de privacidade.
+
+3 - De acordo com o conteúdo apresentado, o que é uma nuvem híbrida?
+Resp.: As nuvens híbridas se aplicam aos casos nos quais os usuários experimentam grandes variações nos perfis de consumo de nuvem, alguns até excedendo seu servidor instalado internamente. Nesses casos, os usuários tem duas opções: a primeira seria a aquisição de mais servidores e a segunda seria diminuir a capacidade computacional, aumentando o tempo para processamento porém atendendo a demanda. Adquirir mais servidores requer investimentos de capital e custos operacionais maiores, pois esses servidores podem permanecer ociosos fora dos horários de pico. A diminuição do poder computacional pode implicar em perda de oportunidades de negócios, pois as tarefas do usuário deverão esperar em uma fila. Essa perda de capacidade computacional pode causar a perda de clientes dependendo das suas necessidades. Uma característica de uma nuvem híbrida é que a infraestrutura de nuvem é composta por duas ou mais nuvens que interoperam ou se unem por meio da tecnologia.
+
+4 - Você é um projetista responsável por migrar um projeto Java para a nuvem e deve considerar aspectos de Integração Contínua e Entrega Contínua. Apresente um “plano de ação” com um passo-a-passo para tal missão.
+Resp.: Para essa migração eu adotaria o seguinte plano de ação:
+- Definir dentro do projeto quais módulos e/ou unidades e infraestruturas devem ser colocadas em uma nuvem.
+- Definir a plataforma que será utiliza para suportar a aplicação;
+- Verificar que as políticas de segurança da nuvem atendem os requisitos do projeto;
+- Definir o provedor de computação em nuvem;
+- Definir os acordos de nível de serviço;
+- Definir os responsáveis pela recuperação da aplicação em caso de interrupções no provedor de serviço;
+- Realizar a migração em fases de modo gradual. A carga da migração será aumentada a medida que a migração avançar, de modo a permitir ajustes e minimizar riscos;
+
+5 - Considerando a situação hipotética da questão anterior, faça uma crítica sobre os aspectos culturais (em nível de equipe) que podem impactar a migração de um projeto para a nuvem.
+Resp.: A viabilização da implantação de projetos em nuvem faz com que as equipes possuam maturidade com relação a cultura DevOps, já que todo o ciclo, desde o desenvolvimento até a entrega, incluindo a infraestrutura necessária para a implantação é integrada e interligada. Uma falha não tratada em alguma das etapas do processo de integração contínua e entrega contínua impacta no produto final, sendo vital para o sucesso do produto.
