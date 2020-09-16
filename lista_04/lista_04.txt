@@ -1,0 +1,52 @@
+Nome: Luis Daniel Assulfi
+
+Disciplina: CETEJ43 - Integração Contínua - JAVA_XVIII (2019_02)
+
+Lista 04 - Exercícios sobre alta disponibilidade e plano de continuidade de negócio
+
+1 - De acordo com o que foi entendido nas notas de aula, o que seria alta disponibilidade de serviços em nuvem?
+Resp.: Entende-se por disponibilidade de um serviço em nuvem o tempo no qual este serviço encontra-se disponível em um determinado intervalo de tempo. Segundo algumas definições e estudos da área de computação em nuvem indicam que um serviço em nuvem é considerado de alta disponibilidade quando o mesmo encontra-se indisponível menos de 5.25 minutos por ano, configurando uma taxa de disponibilidade de 99.999% (também conhecido como padrão de qualidade 5 noves). Outra definição de alta disponibilidade vai na linha da existência de serviços que sejam tolerantes a falhas, não existindo nenhum ponto falho que não seja capaz de se recuperar e responder a usuários/clientes, sendo assim a alta disponibilidade está ligada ao fato de que falhas em componentes não levem a finalização do serviço.
+
+2 - Quais são as métricas para considerar e melhorar a alta disponibilidade em projetos? Você acredita que alguma outra métrica poderia ser considera? Se sim, explique-a.
+Resp.: Devem ser consideradas as seguintes métricas:
+- Tempo de reação: É o atraso entre a ocorrência da falha e a primeira reação da solução de alguma solução de gerenciamento de disponibilidade;
+- Tempo de reparo: É a duração da primeira reação até a entidade (unidade ou módulo) defeituosa ser reparada;
+- Tempo de recuperação: É a duração da primeira reação até que o serviço seja fornecido novamente;
+- Tempo de interrupção: É o tempo entre a ocorrência da falha e a recuperação do serviço, ou seja, é a quantidade de tempo em que o serviço não é prestado e a soma dos tempos de reação e recuperação.
+Na minha opinião eu acredito que a taxa de interrupções por um determinado período de tempo é uma métrica interessante a ser considerada, pois, mesmo que os tempos mensurados sejam baixos, o alto número de vezes em que o serviço torna-se indisponível pode impactar os usuários/serviços.
+
+3 - Explique os elementos básicos associados à alta disponibilidade.
+Resp.: Os elementos básicos associados à alta disponibilidade são:
+- Redundância: A redundância garante que todos os elementos críticos para as operações do sistema tenham um componente adicional redundante que pode assumir a execução em caso de falha.
+- Monitoramento: O monitoramento coleta os dados de um sistema em tempo de execução para a detecção quando um componente falha ou para de responder.
+- Superação de falha (Failover): A superação de falha é um mecanismo que pode alternar automaticamente do componente ativo no momento da falha para um componente reduntante, caso o monitoramento aponte uma falha do componente ativo.
+
+4 - Do ponto de vista técnico, quais os componentes da alta disponibilidade? Cite-os e explique-os.
+Resp.: Os componentes de alta disponibilidade são:
+- Backup e recuperação de dados: O backup e recuperação de dados é realizado através de um sistema que realiza backup automático dos dados em um local secundário e recupera de volta para fonte. Esse componente pode ser usado para configurar redundância e failover.
+- Balanceamento de carga: Um balanceador de carga (load balancer) gerencia o tráfego, roteando entre mais de um sistema que pode atender a esse tráfego. O balanceador de carga pode estar ciente de que um dos sistemas de destino falhou e redirecionar o tráfego para outro sistema disponível, implementando assim o monitoramento e failover.
+- Clusterização: Um cluster contém vários nós que servem a um propósito semelhante e os usuários geralmente acessam e visualizam todo o cluster como uma unidade. Cada nó do cluster pode potencialmente fazer superação de falhas (failover) para outro nó se ocorrer uma falha. Ao configurar a replicação do cluster, é possível criar redundância entre os nós do cluster.
+- Curto-circuito (circuit breaker): o curto circuito é um padrão arquitetural para previnir que uma falha de rede ou falha de serviço de causar um efeito cascata em outros serviços. A ideia é similar um curto circuito em um sistema elétrico, protegido com um disjuntor. Caso um sistema falhe o disjuntor atua, impedindo que o serviço seja acionado por toda a massa de requisições. O disjuntor permite que algumas chamadas sejam realizas, e caso seja verificado que o sistema se recuperou é retomada a operação.
+
+5 - Descreva os aspectos a serem considerados em planos de continuidade e ampliação de negócios em nuvem.
+Resp.: Os seguintes aspectos devem ser considerados em planos de continuidade e ampliação de negócios em nuvem:
+- Definir requisitos de disponibilidade: Esse aspecto está associado ao uso de métricas para estabelecer o que é mais recomendado para aplicação, baseado em regras de negócio;
+- Projetar a arquitetura de alta disponibilidade: o projeto da arquitetura de alta disponibilidade deve envolver alguns pontos críticos:
+-> Análise de modo de falhas, buscando identificar os tipos de falha mais comuns que o sistema possa enfrentar, suas implicações e estratégias de recuperação. Essa análise permite identificar o nível de redundância necessário para cada componente.
+-> Custos das camadas redundantes, incluindo licenças e infraestrutura para suportar essas instâncias;
+-> Resiliência dos serviços, que consite na propriedade dos sistemas de falhar normalmente e restaurar as operações sem interrupção do serviço, isolando recursos críticos, utilizando transações de compensações e operações assíncronas;
+-> Replicação de dados, afim de certificar que os dados do aplicativo estejam replicados de modo a suportar a estratégia de redundância;
+-> Documentação das etapas do processo, seja de modo automatizado ou manual.
+- Realizar testes ponta-a-ponta: os testes ponta-a-ponta permitem garantir a confiabilidade do sistema e a efetividade do ambiente de integração contínua, através do teste do sistema em condições de falhas realistas. As seguintes estratégias devem ser utilizadas nesses testes:
+-> injeção de falhas pra avaliar diferentes cenários de falhas, incluindo combinações de falhas e determinação do tempo de recuperação;
+-> avaliação do failover, através de testes para aumentar o nível de confiança;
+-> planejar e executar exercícios de recuperação de desastre, para que a equipe possa operar rapidamente de acordo com o plano de recuperação de desastre;
+-> testes de integridade do balanceador de carga para identificar possíveis falhas do componente, avaliando a efetividade do balanceamento correto de carga;
+-> avaliação dos sistemas de monitoramento, verificando periodicamente se os dados do sistema de monitoramento são precisos, para garantir que seja possível detectar falhas em tempo hábil.
+- Implantação de aplicações de maneira consistente
+-> É importante a ciência de que qualquer mudança pode resultar em fracasso, sendo que a automatização dos processos de implantação de modo consistente pode ajudar a minimizar a change de erros e falhas, ajudando o sistema a se recuperar mais rapidamente;
+-> A disponibilidade no processo de liberação e/ou integração é um aspecto a ser considerado de modo a permitir atualizações com o mínimo de interrupção do serviço, sendo necessário obter atualizações contínuas para não inativar componentes críticos;
+-> Também é necessário um plano de reversão de integração, para ajudar a restaurar automaticamente os sistemas para uma versão anterior de trabalho. As implantações devem ser automatizadas para permitir que seja gerado um ambiente completo que representa sua última configuração válida;
+-> O monitoramento da integridade da aplicação e detecção de falhas críticas em um tempo hábil para correções e configurações de alta disponibilidade é de extrema importância, para isso devem ser utilizadas funções de verificação. Estratégias de verificação efetivas que usem funções de verificação para obter dados atualizados sobre a disponibilidade do serviço. É importante sempre executar as funções de verificação fora do serviço para garantir o funcionamento correto.
+-> A observação das métricas de alta disponibilidade também necessita de uma estratégia, não devendo ser somente melhoradas em casos totais de falha. Desse modo a integração contínua deve estar alinhada em métricas de integridade que podem fornecer um sinal de aviso de que a falha está prestes a acontecer. Deve ser criado um sistema de alerta precoce, identificado os principais indicadores de integridade do aplicativo e alertando os operadores quando um sistema ainge um valor limite problemático.
+-> Monitorar os limites perdidos de uso de serviços do provedor de serviços, sendo que no caso a aplicação ultrapassar os limites permitidos de um de seus serviços, o  mesmo poderá entrar em falha. Devem ser considerados os seguintes aspectos: armazenamento, computação, taxa de transferência e outras limitações de cada serviço que a aplicação usa. Assim, as estrategias de monitoramento das métricas podem servir como gatilho para ações que ultrapassem os limites.
