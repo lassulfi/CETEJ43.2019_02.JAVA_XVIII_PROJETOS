@@ -1,0 +1,64 @@
+Nome: Luis Daniel Assulfi
+
+Disciplina: CETEJ43 - Integração Contínua - JAVA_XVIII (2019_02)
+
+Lista 04 - Questionário sobre arquitetura
+
+1 - A partir da leitura do texto de referência, defina, apresente conceitos e desafios do IaaS.
+Resp.: A IaaS (Infrastucture as a Service) é composta por plataformas para desenvolvimento, teste, implantação e execução de aplicações proprietárias, sendo seu objetivo princial tornar mais fácil e acessível o fornecimento de recursos , como servidores, redes, armazenamento e outros que são fundamentais na construção de um ambiente sob demanda, podendo estes ser tanto sistemas operacionais quanto aplicativos. 
+A insfra-estrutura é baseada na virtualização dos recursos computacionais que pode ser dinamicamente escalada para aumentar ou diminuir os recursos de acordo com as necessidades das aplicações.
+O modelo de entrega IaaS possui os seguintes conceitos e componentes:
+- Máquinas virtuais: representam uma unidade básica de computação no sistema, podendo ser persistentes ou não.
+- Discos virtuais: são espaços de armazenamento permanentes com tamanho configurável que pode ser disponibilizado para uma máquina virtual em execução, preservando os dados mesmo após o desligamento da VM.
+- SLA (Service Level Agreement) pode ser definido como indicador para definir o nível aceitável de qualidade dos serviços de nuvem oferecidos, sendo o SLA definido por uma definição de contrato, regras de negociação, regras de acompanhamento e de execução.
+- Computação Utilitária: consiste no conceito de encapsular recursos como tempo de processamento, largura de banda, capacidade de armazenamento como serviços a serem entregues aos clientes, trazendo como vantagem a redução de custos, uma vez que o cliente não precisa possuir os recursos e paga somente pelo que tiver utilizado. Além disso a computação utilitária permite o escalonamento de sistemas, evitando falhas devido ao crescimento rápido de picos de demanda do sistema. 
+- Plataformas de virtualização: as plataformas de virtualização abstraem o hardware escondendo a complexidade do gerenciamento de plataformas computacionais físicas, simplificando a escalabilidade dos recursos computacionais, promovendo o atendimento a múltiplos usuários.
+Os principais desafios enfrentados pelo modelo de entrega IaaS são:
+- Falhas de hardware
+- Grandes distâncias entre regiões geográficas, causando o isolamento e latência de redes
+- Definição de uma quantidade de regiões geográficas de modo a minimizar falhas localizadas, como problemas em disco ou falta de enegia
+- A alta complexidade dos serviços pode tornar muito difícil a medição da quantidade de serviço utilizada pelos clientes para a devida cobrança
+- A dificuldade de medir ataques feitos com a intenção de utilizar os serviços sem pagar ou até mesmo controlar o gerenciamento de uma empresa através desses ataques (scam)
+- Problemas com bugs e vulnerabilidades de softwares de nuvem utiulizados para IaaS, isso faz com que os serviços de segurança web se tornem relevantes e sejam o grande desafio para os serviços na nuvem.
+- Necessidades de configurações precisas e seguras para ambientes de virtualização compartilhados para manter o isolamento desses ambientes.
+- Ambientes virtualizados necessitam ter um controle de segurança para minimizar as ameaças resultantes dos processos de comunicação, monitoramento, alterações, migrações e mobilidade
+- Problemas de vulnerabilidade inerentes aos ambientes de redes e da internet, como ataques DoS (Denial of Services), MITM (Man in the middle), IP Spoofing e Port Scanning.
+- Ataques de máquinas virtuais internas contra serviços internos que são mais graves pois contam com privilégios de administrador
+
+2 - A partir da leitura do texto de referência, defina, apresente conceitos e desafios do PaaS.
+Resp.: A PaaS (Platform as a Service) é composta por um hardware virtual disponibilizado como serviço. Uma PaaS oferece tipos específicos de serviços como sistemas operacionais, banco de dados, serviços de mensagens, serviços de armazenamento de dados etc... além de fornecer ambientes de desenvolvimento de software e facilitar a implantação de aplicações sem os custos e complexidades relativos a compra e gerenciamento de hardware e de software adjacentes que são necessários ao ambiente de desenvolvimento.
+O modelo de entrega PaaS possui os seguintes conceitos e componentes:
+- A abstração é um conceito importante para o modelo de entrega PaaS pois oferece aos usuários uma forma de implantar suas aplicações em um repositório aparentemente ilimitado de recursos, eliminando a complexidade de implantação e configuração de infra-estrutura
+- A automação de processos de implantação de aplicativos para uma infra-estrutura, configurando componentes do aplicativo, seus aspectos de provisionamento e o suporte as tecnologias como, por exemplo, balanceamento de carga e bancos de dados e ainda pode gerenciar as mudanças no sistema baseado em políticas definidas pelo usuário. A automação permite a redução de custos relacionados ao desenvolvimento, implantação e gerenciamento do ciclo de vida da aplicação
+- Através de serviços na nuvem o modelo de implantação PaaS provê aos desenvolvedores e arquitetos serviços e APIs que ajudam a simplificar o trabalho de prover elasticidade e escalabilidade. Esses serviços proporcionam uma larga variedade de funcionalidades e efetivamente podem representar a diferença chave entre PaaS concorrentes. Os serviços integrados na nuvem elimina-se a necessidade de integração de vários componentes distintos diminuindo-se o tempo de disponibilização para aplicações na plataformas
+- A arquitetura multi-clientes utiliza recursos comuns de computação como hardware, sistema operacional e softwares com um esquema compartilhado para suportar vários usuários simultaneamente, o que difere da arquitetura cliente - servidor onde se faz necessário que hardware e software sejam dedicados a cada cliente. Isso faz com que diversos clientes se beneficiem pois todos têm acesso a quaisquer novas funcionalidades que sejam introduzidas, e quando uma ameaça qualquer é detectada e devidamente corrigida, também todos se beneficiam com o fortalecimento da infra-estrutura
+- A interface de usuário pode ser customizável, a partir de uma metodologia "arrastar e soltar" permitindo a criação e configuração de componentes de interface de usuário em tempo real, isso permite a reutilização de bibliotecas de componentes de IU sem a necessidade de se escrever códigos complexos
+- Através de funcionalidades de workflow e a especificação de regras de negócios é utilizada para gerar automação dos processos. O workflow define os diferentes estados de um objeto durante seu ciclo de vida. As ações em um workflow direcionam os objetivos através de diferentes estados dentro de um contexto, podendo ser acionado a partir da intervenção humana, se o usuário possuir permissão para isto, ou através de um evento no ambiente
+- Controle sobre segurança e compartilhamento através da definição de acesso ao nível da aplicação através de menus, guias, relatórios, através da criação de grupos e regras em função dos usuários, através da segmentação dos usuários de uma estrutura organizacional, que fornece acesso detalhado a dados e recursos.
+- O modelo de integração flexível permite a uma PaaS a rápida construção de aplicações na nuvem fornecendo elementos fundamentais como persistência de dados e funcionalidades de workflow que são essenciais para a criação de qualquer aplicação de negócios
+Os principais desafios enfrentados pelo modelo de entrega PaaS são:
+- O alto nível de abstração das plataformas criam novos desafios, pois aumentam a complexidade do processo de desenvolvimento de soluções nesse contexto
+- Prover serviços eficientes como cache distribuído, gerenciamento da carga de trabalho, armazenamento de dados e arquivos, identificação de usuário, dentre outros.
+- Devido ao enorme crescimento de dispositivos web se faz necessário uma flexibilidade adicional para suportar tecnologias emergentes de forma que esteja disponível para o projeto da IU.
+- Providenciar um controle completo e minucioso das formas de apresentação para os desenvolvedores de acordo com controles específicos
+- Bancos de dados configuráveis para facilitar a criação e implantação de persistência de objetos sem requerer programação especialista. O modelo de entrega PaaS deve suportar a contrução de objetos, a definição do relacionamento entre os objetos e a configuração do comportamento de dados dentro de uma janela do navegador através do paradigma declarativo "apontar e clicar"
+- Uma PaaS deve oferecer um controle de acesso flexível que permita um controle detalhado sobre o que os usuários de uma aplicação SaaS podem ver e quais dados podem acessar.
+
+3 - A partir da leitura do texto de referência, defina, apresente conceitos e desafios do SaaS.
+Resp.: A SaaS (Software as a Service) é composta por aplicativos que são executados no ambiente da nuvem, podendo estes ser aplicações completas ou conjuntos de aplicações cujo uso é regulado por modelos de negócios que permitem customização. Esses sistemas de software são disponíveis na internet através de uma interface com um navegador web, sendo acessadas de qualquer lugar a partir dos diversos dispositivos dos usuários e permitindo que novos recursos sejam adicionados aos sistemas de forma transparente aos usuários, tornando a manutenção e evolução dos sistemas tarefas mais simples. 
+O modelo de entrega SaaS possui os seguintes conceitos e componentes:
+- A arquitetura multi-cliente de um SaaS faz com que todas as partes compartilhem de uma estrutura comum e uma base de código que é mantida centralizada. Isso permite aos fornecedores inovar mais rapidamente, liberando novas versões mais corretas e com maiores funcionalidades, economizando um valioso tempo de desenvolvimento.
+- As aplicações SaaS são projetada para suportar configurações, que são um conjunto de opções, parâmetros, que afetam a funcionalidade e aparência da aplicação, assim cada cliente possui seus proprios parâmetros de configuração.
+- Como não há preocupações com instalação, configuração e manutenção do ambiente de desenvolvimento, os desenvolvedores podem ser preocupar unicamente com os detalhes das regras de negócio, diminuindo o tempo para desenvolvimento do software e aumentando a produtividade, isso faz com que as atualizações sejam mais rápidas e transparentes ao cliente, sem haver necessidade de reinstalação específica por parte do cliente
+- Os protocolos de integração abertos, com a padronização de APIs, aumenta o desenvolvimento de mashups, que são aplicações que combinam dados, apresentação e funcionalidades de múltiplos serviços criando então um serviço composto
+- As funcionalidades colaborativas, inspiradas no sucesso das redes sociais, promovendo características que permitem que os usuários colaborem e compartilhem informações.
+- Como o SaaS está disponível através de rede remota ou conexão à internet, o software não é instalado no computador do cliente, mas sim a um servidor do provedor do SaaS. Isso faz com que o software possua uma alta disponibilidade a qualquer horário, independente da sua localização.
+- Os SaaSs possuem um modelo de licenciamento baseado em assinatura, utilizando uma abordagem simples, baseada em tempo de uso, sendo cobrado somente aquilo que foi utilizado pelo usuário
+- As aplicações SaaSs são completamente gerenciadas pelo fornecedor, e acordos SLA, regem a qualidade, disponibilidade e suporte que o provedor deve prover para o cliente.
+Os principais desafios enfrentados pelo modelo de entrega SaaS são:
+- Como aplicações SaaS não podem acessar os sistemas internos de uma empresa, eles necessitam oferecer protocolos de integração bem como APIs que possibilitem conexões através de rede.
+- Aplicações SaaS possuem algumas limitações que podem atrapalhar a aceitação de aplicações e até inviabilizar sua utilização em alguns casos.
+- Como os dados estão sendo armazenados na nuvem, nos servidores do provedor, a segurança pode ser vista como um problema.
+- Como o software está hospedado na nuvem há o fator de latência para o ambiente, tornando o modelo SaaS inadequado para aplicações que exigem tempo de resposta muito pequeno
+- As arquiteturas multi-clientes não permitem uma customização verdadeira para clientes em larga escala, proibindo sua utilização em cenários que a customização é imprescindível
+- Algumas aplicações de negócio requerem acesso ou integração com dados atuais do cliente. Quando o volume de dados é muito grande, ou os dados são informações sigilosas a integração com o software remoto é cara ou apresenta muitos riscos.
