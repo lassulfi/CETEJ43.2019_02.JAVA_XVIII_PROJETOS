@@ -1,0 +1,41 @@
+Nome: Luis Daniel Assulfi
+
+Disciplina: CETEJ43 - Integração Contínua - JAVA_XVIII (2019_02)
+
+Lista 06 - Armazenamento de dados e implantação de data center
+
+1 - Você é arquiteto de um projeto Java que deve obter dados sigilosos e também dados públicos da regra de negócio de um cliente. Quais aspectos de segurança vs performance você consideraria?
+Resp.: É importante considerar nesse projeto dessa arquitetura que os dados sensíveis sejam armazenados de modo criptografado. O algoritmo de criptografia deve ser confiável e atualizado, como o algoritmo SHA 3, por exemplo. Outra solução para a segurança dos dados privados é o acesso somente de usuários autenticados e a utilização de roles para definir níveis de acesso a certos dados e permitir a manipulação de dados somente a determinados papéis de usuário. Como os dados privados são criptografados deve-se dar uma atenção a performance devido a diminuição das taxas de transferência, para isso pode-se utilizar alguns serviços de nuvens privadas que aumentam a taxa de transferência da largura de banda, como por exemplo o AWS Direct Connect. Já os dados públicos não necessitam de criptografia e podem ser armazenados e acessados em nuvens públicas, diminuindo custos com relação a nuvens privadas. Com relação a performance uma solução é utilizar a redundânica de dados, isso garante a disponibilidade da aplicação porém devem também ser avaliadas a administração, custo, latência da rede, desempenho e requisitos de resiliência.
+
+2 - De acordo com a leitura das notas de aula, quais aspectos são relevantes quando consideramos a economia de custo para dados que serão armazenados na nuvem. 
+Resp.: Com relação a custos de armazenamento em nuvem devem ser considerados os seguintes aspectos:
+- Tipo de assinatura: serviços em nuvem possuem tipos de assinatura mensal ou anual. Nuvens públicas são frequentemente mais economicas, porém algumas software houses são cautelosas ao utilizar nuvens públicas pois os dados são enviados para fora das instalações de rede
+- Gestão da privacidade dos dados: manter os dados em uma nuvem privada é muito mais custoso que manter em uma nuvem pública. Isso se dá pelo fato da gestão dos dados ocorrer em uma infraestrutura interna, além dos protolocos de segurança aplicados, como criptografia, autenticação etc.
+- Arquitetura em nuvem híbrida: A utilização de nuvens hibridas pode ser uma solução economicamente viável dependendo dos requisitos de segurança e performance. Isso ocorre pois alguns recursos são administrados internamente, enquanto outros são fornecidos a provedores de nuvens terceirizados.
+
+3 - Baseando-se na leitura das notas de aula, explique o que seriam o aspecto da georedundância.  
+Resp.: Georredundância consiste na separação física dos datacenters em localizaçoes geográficas diferentes, mantendo os dados redundantes, aumentando a taxa de alta disponibilidade da aplicação. A georredundância causa aumento de custo geral e aumento da complexidade da rede do sistema. Um cuidado deve ser tomando pela equipe de TI ao optar pela georredundância de dados são as questões relacionadas à conformidade regulamentar, administração e custo. Também devem considerar vários outros fatores, como latência, desempenho e requisitos de resilência antes de realizar esse tipo de investimento. 
+
+4 - Quais são os seis parâmetros de projetos de software/aplicações a serem analisados para tomadas de decisões em projetos de datacenter?
+Resp.: Os parâmetros do projeto para controlar a arquitetura e o orçamento do data center são:
+1. Criticidade;
+2. Capacidade;
+3. Crescimento;
+4. Eficiência;
+5. Densidade; e
+6. Orçamento.
+
+5 - Cite e explique as quatro fases de projeto de implantação de um data center.
+Resp.: As fases de projeto de implantação de um data center são:
+- Fase 1: Estabelecer os principais parâmetros para controlar a arquitetura e o orçamento do data center. Nessa fase devem ser identificadas as necessidades do negócio e em seguida devem ser determinados os parâmetros do projeto em relação aos seguintes parâmetros:
+1. Criticidade;
+2. Capacidade;
+3. Crescimento;
+4. Eficiência;
+5. Densidade; e
+6. Orçamento.
+O objetivo da fase 1 é garantir que o tempo escasso dos executivos seja aplicado em decisões importantes.
+- Fase 2: Desenvolvimento do conceito do projeto. Nessa fase é feita a seleção de um projeto de referência. Utilizando-se dos parâmetros chave deve-se buscar os projetos de referência mais adequados. Após selecionar projetos candidatos, deve-se revisá-los para considerações adicionais, como logística e reputação do fornecedor. O objetivo dessa etapa é a escolha do conceito geral de infraestrutura física.
+- Fase 3: Incorporação de preferências e restrições do usuário. 
+
+6 - Quais os três principais riscos a serem considerados para a definição do local de um data center?
