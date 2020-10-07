@@ -1,0 +1,59 @@
+Nome: Luis Daniel Assulfi
+
+Disciplina: CETEJ43 - Integração Contínua - JAVA_XVIII (2019_02)
+
+Lista 07 - Virtualização de ambientes e servidores
+
+Questão 1 - O que é virtualização?
+Resp.: A virtualização é o processo de criação e execução de uma instância virtual de algo, sendo que na maioria dos casos, há uma camada de abstração entre o hardware real e a instância virtual, aumentando-se assim a capacidade do sistema.
+A virtualização, assim como as tecnologias de computação em nuvem, permite a criação de ambientes padronizados, permitindo que desenvolvedores trabalhem em um ambiente próximo ao ambiente a ser configurado para o cliente, que é o ambiente de produção. Criar ambientes de desenvolvimento, testes e produção similares aos do clientes/usuários reduz severamente a chance do software ser entregue com bugs ou erros que possam causar falhas que prejudiquem os negócios do cliente ou a experiência do usuário. Adicionalmente, a virtualização permite uma maior flexibilidade na adição de novos integrantes ao time de desenvolvimento por meio de acessos remotos e configurações de recursos ferramentais.
+
+Questão 2 - Cite e explique os tipos de virtualização
+Resp.: Os tipos de virtualização existentes são:
+- Virtualização de hardware: A virtualização de hardware consiste na virtualização de computadores como plataformas de hardware completas, certas abstrações lógicas de seus componentes ou apenas a funcionalidade necessária para executar vários sistemas operacionais. Um exemplo de virtualização de hardware é uma máquina virtual, cujo funcionamento se assemelha a um sistema real com o mesmo sistema operacional ou um sistema operacional diferente.
+- Virtualização de rede: A virtualização de rede é um processo no qual uma combinação de recursos de rede de software e hardware forma uma única rede de software, comumente conhecida como rede virtual. Além disso, a largura de banda disponível é dividida em vários canais independentes, que podem ser usados por dispositivos e servidores reais.
+- Virtualização de desktop: A virtualização de desktop consiste em separar o desktop lógico ou virtual do desktop físico. Neste caso, ao invés de acessar a área de trabalho usando o hardware do computador e periféricos, a área de trabalho está localizada remotamente de outro sistema usando uma conexão de rede. Essa rede pode ser uma LAN com ou sem fio ou a Internet. Assim sendo, o usuário pode acesar seus arquivos de qualquer sistema sem operar fisicamente o pedido que contém os dados.
+- Virtualização de armazenamento: a virtualização de armazenamento consiste em criar unidades de armazenamentos virtuais a partir de uma combinação de vários discos de armazenamento, formando um pool ou grupo de armazenamento. Essas unidades de armazenamento virtuais podem ser atribuídas a servidores para uso. Um exemplo de virtualização de armazenamento são os volumes lógicos, que representam o armazenamento como uma unidade coerente em vez de uma unidade física.
+- Virtualização de servidor: Esse tipo de virtualização é util quando é necessário executar um único servidor físico em vários sistemas operacionais simultaneamente. Com esse processo, o desempenho, a capacidade e a eficiência do servidor aumentam, enquanto os custos de gerenciamento e a complexidade são reduzidos.
+
+Questão 3 - Quais os benefícios do uso de virtualização em projetos com DevOps e integração contínua?
+Resp.: Os benefícios do uso da virtualização em projetos com DevOps são:
+- Carga de trabalho reduzida: Os provedores de virtualização atualizam continuamente o hardware e o software usados para virtualização, portanto, não há necessidade de fazer essas atualizações localmente. A equipe de TI da empresa pode se concentrar em outros pontos importantes e economizar tempo e custos para organização.
+- Disponibilização de um ambientes de testes: Através da virtualização pode-se configurar um ambiente de testes local. Esse ambiente pode ser usado para vários tipos de teste de software (técnicas, critérios e fases de teste). Mesmo se um servidor falhar, não haverá perda de dados. Assim, a confiabilidade é aumentada e o software pode ser testado neste ambiente virtual até que esteja pronto para implantação ao vivo.
+- Maior economia de energia: a virtualização permite uma maior economia de energia uma vez que não são utilizados software ou servidores locais e sim máquinas virtuais. Essa economia de energia reduz custos operacionais.
+- Melhoria da utilização do hardware: A virtualização diminui a necessidade de sistemas físicos, por consequência diminuindo custos de manutenção e energia, pois o uso de CPU e memória são aprimorados.
+- Alguns benefícios adicionais: redução de custos operacionais e de capital, diminuição do tempo de inatividade, aumento da produtividade, eficiência, agilidade e capacidade de resposta da equipe de TI, diminuição do tempo de provisionamento e entrega de aplicativos e recursos, maior continuidade de negócios e recuperação de desatres, simplificação do gerenciamento de data centers, diponibilização de um verdadeiro data center definido via software.
+
+Questão 4 - Quais as principais limitações associadas ao uso de virtualização em projetos de software?
+Resp.: As limitações associadas ao uso de virtualização em projeto de software, em especial na implementação de DevOps são:
+- Apesar da otimização do tempo no desenvolvimento de software e testes, a configuração do ambiente virtualizado e sua aplicação possuem uma alta duração para serem completas;
+- Existem riscos de segurança pois há uma grande change de violação de dados no processo de virtualização. Isso ocorre pois a acessibilidade remota e a virtualiação de desktops ou aplicativos apresenta riscos de segurança;
+- Maturidade das equipes de TI com processos de virtualização. A contratação de profissionais qualificados e treinamento da equipe possui um custo considerável para a corporação e pode levar tempo até que a equipe tenha maturidade suficiente. 
+
+Questão 5 - Você é engenheiro(a) ou desenvolvedor de software de uma software house que deseja mover suas aplicações para ambientes virtualizados. Com base no texto do capítulo, faça uma pesquisa e crie um plano inicial de como sua empresa pode proceder. Durante sua pesquisa, você identificou alguma ferramenta ou serviço que pode ser útil para facilitar o trabaho da sua equipe? Descreva seu plano e suas impressões.
+Resp.: O plano de migração seria composto pelas seguintes etapas:
+- Antes da migração:
+    - Definição de um centro de excelência, envolvendo os principais stakeholders, para facilitar a migração de uma maneira mais suave e rápida, atendendo as metas da organização e assegurando o amplo suporte de uma equipe multifuncional composta por proprietários dos setores de TI, finanças e negócios;
+    - Definição e escolha dos parceiros de virtualização, além de envolver os provedores dos serviços no processo, de preferência selecionando os que ofereçam suporte durante o processo de migração e após o processo;
+    - Elaboração de um inventário da insfraestrutura e avaliação dos ambientes locais, avaliando o dimensionamento correto, estimativas de carga de trabalho e métricas de desempenho;
+    - Calcular o custo total de propriedade, para construir casos de negócios para a migração;
+    - Criação de um plano de migração holístico, definindo marcos, recursos, financiamento e as prioridades das cargas de trabalho. Dividir o plano geral em projetos de migração, cada qual relacionado as suas cargas de trabalho. Esse plano deve buscar a adesão da liderança e do novo centro de excelência em migração.
+- Durante a migração: Nessa etapa devemos preparar a nossa organização para a migração e selecionar os provedores de virtualização;
+    - Definir as habilidades da equipe de TI e de desenvolvimento de aplicativos, mantendo-os atualizados com relação as tecnologias de virtualização e de nuvem, ferramentas de migração e processos operacionais;
+    - Definir o investimento em treinamento inicial;
+    - Dimensionar os esforços de migração de modo a possuir uma maior eficácia;
+    - Configurar as zonas de destino para as cargas de trabalho:
+        - As zonas de destino incluem: elementos de rede, identidade, gerenciamento, segurança e governança;
+    - Escolher um coorte de tamanho gerenciavel de cargas de trabalho para cada onda;
+    - Realizar as mudanças com ferramentas automatizadas;
+    - Selecionar os serviços de nuvem de destino para mover as cargas de trabalho;
+- Após a migração:
+    - Detectar e responder rapidamente a ameaças em ambientes híbridos com proteções contra ameaças;
+    - Utilizar um painel de controle para auxiliar o gerencimento, monitorando as cargas de trabalho em todos os ambientes, de preferência em tempo real;
+    - Realizar backups das cargas de trabalho e preparar soluções de recuperação de desastre;
+    - Estabelecer e manter o conjunto esperado de políticas padrão e políticas personalizadas para controlar assinaturas e recursos de virtualização e de nuvem;
+    - Monitorar os gastos em nuvem;
+    - Aumentar a eficiência operacional;
+Alguns serviços interessantes para a migração que identifiquei foram os serviços da Amazon AWS e da Microsoft Azure. Ambos apresentam boas ferramentas que auxiliam a migração de serviços com segurança.
+
+
